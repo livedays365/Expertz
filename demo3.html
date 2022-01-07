@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <script>
+          //  object to primitive
+          let s = new String("javascript")
+          let x = s.valueOf()
+          console.log(typeof x, x)
+          console.log(s, typeof s);
+          let i = new Number(123)
+          let i1 = i.valueOf()
+          console.log(i1, typeof i1);
+          let str = "helooo"
+          str.toUpperCase()
+let s1="    javascript is interpreted      "
+console.log(s1.length);
+s2=s1.trim() //remove the white spaces from left and right
+console.log(s1,s1.length);
+console.log(s1,s2.length);
+//--------------------------------------------------------------
+//for -each-loop
+let word ="helloo"
+for(let letter of word){
+     console.log(letter);
+}
+//index in -index , letter of - value
+for(let index in word){
+     console.log(index);
+}
+//---------------------------------------------------------------
+let sub_str=word.substring(0,3)
+console.log(sub_str);
+
+console.log(word.charAt(3));
+console.log(word[5]);
+console.log(word.indexOf("l"));
+console.log(word.lastIndexOf("l"));
+console.log(word.lastIndexOf("l",3));
+console.log(word.indexOf("k")); ///k is not in the string.so it results -1
+//--------------------------------------------------------------
+
+
+
+
+
+
+
+
+//hw  enter a string. find the count of string--str
+//function getwordcount(str){
+//    return count
+//}
+//-----------------------------------------------------------------
+// s="hai"
+//to find length = s.length
+
+
+//git --version
+      // sudo 
+     </script>
+</body>
+
+</html>

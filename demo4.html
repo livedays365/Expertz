@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     
+
+<label for=""  > Enter your string</label><input type="text" id=stmt>
+<label for=""  > Enter a character</label><input type="text" id=letter>
+<button>check</button>
+<p  id="p1">
+
+</p>
+
+
+
+<script>
+function getIndex(){
+     let stmt=document.getElementById("stmt").value
+let letter=document.getElementById("letter").value
+let start =stmt.indexOf(letter)
+let last = stmt.lastIndexOf(letter)
+if (start != last) {
+     let str = `the letter ${letter} is present at index number ${start},`
+let index;
+for (let i = start + 1 ;  last -1 ; i++){
+
+     index=stmt.indexOf(letter,i)
+     console.log(index);
+     if (index != -1){
+          str+=index+',${last},'
+     }
+}
+document.getElementById ("p1").innerText = str
+
+
+}
+else{
+     document.getElementById("p1").innerText = `the letter ${letter} is present at index number ${start}`
+}
+
+}
+
+
+</script>
+   
+</body>
+</html>
